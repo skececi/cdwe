@@ -30,6 +30,8 @@ cargo install cdwe
 
 2. **Init your shell**
 ```bash
+cdwe init
+# Or explicitly: 
 cdwe init zsh # zsh shells
 cdwe init bash # bash shells
 cdwe init fish # fish shells
@@ -257,7 +259,7 @@ similar directory structure for each user.
 ```bash
 cdwe-remove #removes the `source <output>` from your .zshrc/.bashrc/.fish
 
-zsh #reload your shell, use bash or fish if you use those.
+exec "$SHELL" #reload your shell, use bash or fish if you use those.
 ```
 
 2. Uninstall binary

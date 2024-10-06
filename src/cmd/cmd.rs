@@ -18,15 +18,15 @@ pub enum Commands {
     },
     #[command(arg_required_else_help = true)]
     Init {
-        #[arg(value_name = "SHELL", required = true)]
+        #[arg(value_name = "SHELL", required = false)]
         shell: Option<Shell>,
     },
     Reload {
-        #[arg(value_name = "SHELL", required = true)]
+        #[arg(value_name = "SHELL", required = false)]
         shell: Option<Shell>,
     },
     Remove {
-        #[arg(value_name = "SHELL", required = true)]
+        #[arg(value_name = "SHELL", required = false)]
         shell: Option<Shell>,
     },
 }
